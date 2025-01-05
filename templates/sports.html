@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports App</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #1e2a3a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff8c00;
+        }
+
+        /* Main Content Styling */
+        .content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 30px;
+        }
+
+        .sidebar {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ff8c00;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1e2a3a;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .sidebar {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Sports Hubs</h1>
+        <p>Your Daily Sports News & Updates</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Live Scores</a>
+        <a href="#">Teams</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="content">
+
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <h3>Upcoming Matches</h3>
+            <ul>
+                <li><a href="#">Football: Team A vs Team B - 15:00</a></li>
+                <li><a href="#">Basketball: Team X vs Team Y - 17:30</a></li>
+                <li><a href="#">Tennis: Player 1 vs Player 2 - 19:00</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <h2>Sports News</h2>
+            <article>
+                <h3>Champions League: Team A Clinches the Victory</h3>
+                <p>Team A triumphed over Team B in the Champions League final yesterday evening. With a 3-1 win, they secured their first-ever Champions League trophy. The match was a thrilling spectacle...</p>
+            </article>
+
+            <article>
+                <h3>NBA Finals: Team X Wins Game 4</h3>
+                <p>In an exciting turn of events, Team X defeated Team Y in Game 4 of the NBA Finals. The game ended with a nail-biting scoreline of 108-107...</p>
+            </article>
+
+            <article>
+                <h3>Tennis Grand Slam: Player 1 Dominates</h3>
+                <p>Player 1 has once again shown his dominance in the tennis world by clinching another Grand Slam title. The victory puts him at the top of the ATP rankings...</p>
+            </article>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Sports Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
